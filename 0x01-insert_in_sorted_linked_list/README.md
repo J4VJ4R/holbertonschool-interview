@@ -1,7 +1,7 @@
 # PREPARATION FOR INTERVIEW ALGORITHMS
 
 
-![Project image](https://images.unsplash.com/photo-1553991562-9f24b119ff51?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8a2V5fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60)
+![Project image](https://electricalworkbook.com/wp-content/uploads/2018/09/c_new_list-1024x596.png)
 
 ### Table of content
 
