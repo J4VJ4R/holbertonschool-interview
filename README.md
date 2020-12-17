@@ -41,6 +41,6 @@ This project is only for reading, also if possible you can downloading for your 
 ### Author info
 
 - Twitter - [@javifullstack](https://twitter.com/javifullstack) :smiley: 
-- Linkedin - [Javier Jaramillo | Front-end Developer](https://www.linkedin.com/in/javier-jaramillo-346b681a1/) :gem:
+- Linkedin - [Javier Jaramillo | Systems Engineer | Full-Stack Software Developer](https://www.linkedin.com/in/javier-jaramillo-346b681a1/) :gem:
 
 
