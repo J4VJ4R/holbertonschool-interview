@@ -1,18 +1,28 @@
-#include "palindrome.h"
+#include "lists.h"
 /**
- * is_palindrome - checks whether or not
- * a given unsigned integer is a palindrome.
- * @n: is the number to be checked.
- * Return: 1 if n is a palindrome, and 0 otherwise
+ * is_palindrome - checks if a singly linked list is a palindrome.
+ * @head: head of listint_t to check if is a palindrome.
+ * Return: 0 if it is not a palindrome, 1 if it is a palindrome.
  */
-int is_palindrome(unsigned long n)
+int is_palindrome(listint_t **head)
 {
-	unsigned long aux = 0, n1 = n;
+	listint_t *cpy = *head;
+	int buff[2048], i = 0, j = 0, mid;
 
-	while (n1)
+	if (!head || (cpy && !cpy->next))
+		return (1);
+	while (cpy)
 	{
-		aux = (aux * 10) + (n1 % 10);
-		n1 /= 10;
+		buff[i] = cpy->n;
+		cpy = cpy->next;
+		i++;
 	}
-	return (n == aux ? 1 : 0);
+	i--, mid = i / 2;
+	while (i >= mid && j <= mid)
+	{
+		if (buff[j] != buff[i])
+			return (0);
+		i--, j++;
+	}
+	return (1);
 }
