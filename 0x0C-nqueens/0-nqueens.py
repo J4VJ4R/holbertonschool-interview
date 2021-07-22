@@ -1,30 +1,24 @@
 #!/usr/bin/python3
 """
-    N-queen problem
-    The next algo solve any N queen in any NxN
-    Being N > 3
+    The N queens puzzle is the challenge of placing N non-attacking
+    queens on an N×N chessboard. Write a program
+    that solves the N queens problem.
 """
 import sys
 
 
 def n_q(t_arr, arr, col, i, n):
     """
-       n_q - Find all posibles solution for N-queen problem and return it
-             in a list
-       @t_arr: temporaly list to store the all points of a posible solution
-       @arr: store all the solution
-       @col: save a colum use for a queen
-       @i: the row of the chess table
-       @n: Number of queens
+    If the user called the program with the wrong number of arguments,
+    print Usage: nqueens N, followed by a new line, and exit with the status 1
     """
     if (i > n):
         arr.append(t_arr[:])
         return arr
 
     for j in range(n + 1):
-        if i == 0 or ([i - 1, j - 1] not in t_arr and
-                      [i - 1, j + 1] not in t_arr and
-                      j not in col):
+        if i == 0 or ([i - 1, j - 1] not in t_arr and [i - 1, j + 1]
+                      not in t_arr and j not in col):
             if i > 1:
                 dia = 0
                 for k in range(2, i + 1):
