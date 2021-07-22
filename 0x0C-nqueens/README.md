@@ -15,4 +15,4 @@ Chess grandmaster Judit Polgár, the strongest female chess player of all time
 
 ## Author
 
-**Joshua Martinez** - [dantsub](https://github.com/dantsub)
+**Javier Jaramillo** - [dantsub](https://github.com/j4vj4r)
