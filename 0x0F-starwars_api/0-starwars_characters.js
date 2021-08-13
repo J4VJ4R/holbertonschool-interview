@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const request = require('request');
+import request from 'request';
 
 async function sw (id) {
   const url = `https://swapi-api.hbtn.io/api/films/${id}`;
