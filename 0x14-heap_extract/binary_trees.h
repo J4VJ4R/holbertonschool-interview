@@ -1,8 +1,10 @@
-#ifndef HEAP_EXTRACT
-#define HEAP_EXTRACT
+#ifndef BINARY_TREES_H_
+#define BINARY_TREES_H_
 
-#include <stdio.h>
+/* ==== LIBRARIES ==== */
+#include <stddef.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -21,10 +23,12 @@ struct binary_tree_s
 };
 
 typedef struct binary_tree_s binary_tree_t;
+
+/* ==== Max Binary Heap ==== */
 typedef struct binary_tree_s heap_t;
 
-void binary_tree_print(const binary_tree_t *tree);
-
+/* ==== PROTOTYPES ==== */
+void binary_tree_print(const binary_tree_t *);
 int heap_extract(heap_t **root);
 
-#endif
+#endif /* BINARY_TREES_H_ */
